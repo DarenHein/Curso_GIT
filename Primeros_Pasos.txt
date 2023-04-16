@@ -120,3 +120,7 @@ ahora cada vex que modifiques el archivo aras lo siguiente
 
  git clone url_del_repositorio (solamente que no se donde lo guarda lo tengo que buscar 
  )
+
+TAMBIEN SE DEBEN DESCARGAR LOS CAMBIOS 
+
+1 ==> git pull ==> por el momento no lo e probado pero eset srive para cargar los cambios que se allan hecho en el server 
