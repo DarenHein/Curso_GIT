@@ -102,3 +102,16 @@ juntar las ramas con el main es importante para esto tenemos que hacer lo siguie
 
 NOTA : ahuevo tiene que ser en el main 
 escribirmos ==> git merge nombre_de_larama ==> con este mezclamos la rama con el metodo main y asi no hacemos tantos cambios 
+
+
+SUBIR ARCHIVOS AL SERVIDOR 
+
+primero : crea una cuenta de github 
+hay muchos videos 
+para subir 
+ahora cada vex que modifiques el archivo aras lo siguiente 
+ 1 = git add . 
+ 2 = git commit -m "cambio"
+ 3 = git push 
+
+ y listo ya se subio a tu repositorio de git hub 
