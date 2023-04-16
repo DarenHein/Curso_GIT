@@ -126,3 +126,5 @@ TAMBIEN SE DEBEN DESCARGAR LOS CAMBIOS
 1 ==> git pull ==> por el momento no lo e probado pero eset srive para cargar los cambios que se allan hecho en el server 
 
 NOTA EN LA COMPUTADORA QUE ALLAS CREADO EL REPOSITORIO AL FINAL BORRALO 
+
+hola soy una prueba del git pull ignorame 
