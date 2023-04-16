@@ -1,0 +1,104 @@
+En este apartado estoy dentro de un curso de GIT tratare de ser lo mas especifico psosible ala hora de explicarme 
+
+(los comandos especiales los especificare ya sea de mac o windows)
+
+Primeros pasos : 
+la configuracion de git 
+
+1 --> git --version ==> que version de git estamos manejando 
+2 --> git config --global user.name "tunombre" ==> configurar el nombre que ocuparas en git 
+3 --> git config --global user.email tucorreo ==> configurar el correoque se ocupara en git 
+4 --> git config --global code.editor "code --wait" ==> esperar y configurar el vscode en git 
+5 --> git config --global -e ==> no me acuerdo para que es jajajajaj
+6 --> git config --global core.autcrlf ==> cancelar los caracteres especiales en mac y windows windows ==> true en mac y linux ==> input 
+
+FLUJO DE TRABAJO : 
+
+SE DIVIDE EN TRES 4 PARTES 
+
+    COMPUTAADOR 
+    STAGE 
+    COMMIT 
+    SERVER 
+
+    EL COMPUTADOR : son los archivos dentro de la carpeta que tiene el repositorio 
+    STAGE : lso agregamos con git add estos sirven como face de referencia modificaciones 
+    COMMIT : estos son archivos comprometidos es una fase antes del server 
+    SERVER : como github entre otras sirve para una copia final de tu codigo 
+
+
+COMANDOS (ahora si llegamos ala parte buena )
+
+TAB ==> autocompletar en mac 
+
+1-- > ls --> ver todo donde nos encontramos 
+2 --> cd ubicacion/ --> abrir una ubicacion en especifico 
+3 --> pwd --> ver donde estamos 
+4 --> cd .. --> regresar unos mas atras
+5 --> mkdir nombre --> crear carpeta/directorio 
+6 --> git init --> crear repositorio en la carpeta indicada 
+7 --> ls -a ---> mostrar caprtas ocultas como la git al crearla  
+8 --> code . --> abrir el vscode 
+9 --> git status --> mostrar estado del repositorio 
+10 --> git add . --> agrega todo al stage 
+11 --> git add .txt -->solo agrega los archivos con esa extencion 
+12 --> git add nombre.txt --> solo agrega ese archivo 
+
+todo esto es para agregar en el stage (paso : 9,10,11,12)
+
+Commit ===> comprometer 
+
+existen dos formas 
+
+1 ==> git commit -m "mensaje" (para identificar las versiones)
+2 ==> git commit ==> agregar por vscode (me sguta mas por terminal)
+
+ELIMINAR ARCHIVOS 
+
+1 ==> rm archivo.txt ==> elimina el archivo 
+2 ==> mv archivo.extencion nuevonombre.extencion
+3 ==> git mv viejonombre.extencion nuevonombre.extencion ==> para agregar al stage al mismo tiempo que renomrbrar
+
+IGNORAR ARCHIVOS 
+(ARCHIVOS DE CONFIGURACION SOLO DE NUESTRO PC )
+
+en vs code creamos un arichvo con el nombre 
+ ==> .gitignore ==> dentro de este arcihvo ponemos el nombre del arichvo que quermos que no sea ni en el stage ni commiteado  
+
+ agregar el gitignore ==> git add 
+
+ TIP ==> alternativa git status ==> en vscode ==> git status -s (mejor le entiendo mas)
+
+4 ==< git diff ==> forma mas visual de ver los cambios hechos 
+
+5 ==> git diff --staged ==> mostrar los cambios que se encuentran en stage 
+salir con u 
+
+HISTORIAL DE COMMITS 
+
+1 ==> git log ==> historial 
+2 ==> git log --oneline ==> muestra el historial de una froma mas amistosa 
+(salir con u)
+
+RAMAS 
+
+hay una rama principal por defecto "main" 
+pero en git se pueden crear multiples ramas para trabajar 
+
+         o-o-o-o-o
+        /          \
+o-o-o-o-o-o-o-o-o-o-o
+
+estas sirvern para apartar un pedaso de codigo trabajr con el y regresarlo al principal 
+
+comandos : 
+
+1 ==> git branch ==> nos dice en que rama estamos 
+2 ==> git chechout -b nombre_dela_rama ==> crea la rama 
+
+3 ==> cat nombre.extencion ==> ver el contenido de la extensioon 
+
+juntar las ramas con el main es importante para esto tenemos que hacer lo siguiente 
+
+NOTA : ahuevo tiene que ser en el main 
+escribirmos ==> git merge nombre_de_larama ==> con este mezclamos la rama con el metodo main y asi no hacemos tantos cambios 
