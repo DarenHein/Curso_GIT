@@ -115,3 +115,8 @@ ahora cada vex que modifiques el archivo aras lo siguiente
  3 = git push 
 
  y listo ya se subio a tu repositorio de git hub 
+
+ CLONAR UN REPOSITORIO 
+
+ git clone url_del_repositorio (solamente que no se donde lo guarda lo tengo que buscar 
+ )
